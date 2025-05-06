@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2569129571947473122}
   - component: {fileID: 5570095764887552013}
   - component: {fileID: 2264051450750123316}
+  - component: {fileID: 982109510230571405}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -134,6 +135,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDir: {x: 0, y: 0}
+  OnBombPressed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5570095764887552013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +176,19 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &982109510230571405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2624976395683311283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04a8fa970a915bb4c8a7c3eac1a643b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bombPrefab: {fileID: 8665978316331364120, guid: 866068dc43c2e3b4aaf42d12ac977e76, type: 3}
 --- !u!1 &7063089103135012457
 GameObject:
   m_ObjectHideFlags: 0
