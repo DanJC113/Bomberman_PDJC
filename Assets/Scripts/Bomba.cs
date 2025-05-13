@@ -82,4 +82,9 @@ public class Bomba : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
+    public void SetBombRange(int range)
+    {
+        this.range = range * gridOffset;
+    }
 }

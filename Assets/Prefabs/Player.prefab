@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5570095764887552013}
   - component: {fileID: 2264051450750123316}
   - component: {fileID: 982109510230571405}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,6 +189,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombPrefab: {fileID: 8665978316331364120, guid: 866068dc43c2e3b4aaf42d12ac977e76, type: 3}
+  bombPoolParent: {fileID: 0}
+  maxBombs: 1
+  bombRange: 1
 --- !u!1 &7063089103135012457
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,7 +204,7 @@ GameObject:
   - component: {fileID: 5138338879194912066}
   - component: {fileID: 4682569618630765858}
   - component: {fileID: 9019054625556173639}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
