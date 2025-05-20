@@ -6,6 +6,8 @@ public class MovementController : MonoBehaviour
     CharacterController characterController;
 
     [SerializeField] float speed;
+
+    
     void Start()
     {
         inputManager = GetComponent<InputManager>();
@@ -20,7 +22,13 @@ public class MovementController : MonoBehaviour
             transform.forward = new Vector3(inputManager.moveDir.x, 0, inputManager.moveDir.y);
             characterController.Move(transform.forward * speed * Time.deltaTime);
         }
+    }
 
-        
+    public void DisablePlayer()
+    {
+        GetComponent<PlayerBombManager>().enabled = false;
+        characterController.enabled = false;
+        GetComponent<MeshRenderer>().enabled = false;
+        this.enabled = false;
     }
 }
